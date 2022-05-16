@@ -99,7 +99,19 @@ input[name="r"]{
 	margin-left: 0.1rem;
 	transition: all 0.7s ease-in;
 }
-
+@media (max-width:643px){
+	.footer__slider{
+		flex-direction: column;
+	}
+	.footer__text{
+		order: 2;
+	}
+	.navigation{
+		order: 1;
+		margin-bottom: 0.5rem;
+		align-self: center;
+	}
+}
 #r1:checked ~ .footer__slider .footer__text .t1{
 	margin-left: 0;
 }
